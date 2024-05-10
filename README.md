@@ -1,5 +1,5 @@
-# Basic Starter Kit!
+# Basic Starter Kit ⭐
 
-## Owner - Angelo Encarnacion
+## Owner - Angelo J Encarnacion
 
 Alter this statement to indicate the usage of this repository. 
