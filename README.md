@@ -1,5 +1,5 @@
-# Basic Starter Kit
+# Basic Starter Kit!
 
-## Owner your name
+## Owner - Angelo Encarnacion
 
-Alter this statement to indicate the usage of this repository
+Alter this statement to indicate the usage of this repository. 
