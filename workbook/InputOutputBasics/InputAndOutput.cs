@@ -29,9 +29,8 @@ Console.WriteLine($"Hello {inputtedName}, it's nice to meet you!");
 
 // READING INPUT PART 2:
 // We will want to convert the string into a number if we're given a number and need to use it as such. We can "parse" it as a data type an try to see if it works!
-Console.WriteLine("Please enter a whole number. I will add 20 to it.");
+Console.WriteLine("Please enter a whole number. I will add 21 to it.");
 inputtedNumber = int.Parse(Console.ReadLine());
 
-Console.WriteLine(inputtedNumber + 20);
-
+Console.WriteLine(inputtedNumber + 21);
 
