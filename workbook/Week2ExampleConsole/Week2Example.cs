@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+// Quick example from May 14th, re: simple programming examples.
+
 // First off, we need variables!
 // Now variables are DATA! We gotta name them to use them!
 
