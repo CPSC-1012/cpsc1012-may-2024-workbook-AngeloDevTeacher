@@ -5,9 +5,13 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week2ExampleConsole", "Week2ExampleConsole\Week2ExampleConsole.csproj", "{BF653133-C559-4B9A-8820-6888C0993902}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToDataTypes", "IntroToDataTypes\IntroToDataTypes.csproj", "{0F6FEED4-24DE-4EC5-8240-B03B4D02BD71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToDataTypes", "IntroToDataTypes\IntroToDataTypes.csproj", "{0F6FEED4-24DE-4EC5-8240-B03B4D02BD71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputOutputBasics", "InputOutputBasics\InputOutputBasics.csproj", "{4CB42D08-46CF-4AC9-BA7A-8293B3E47253}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputOutputBasics", "InputOutputBasics\InputOutputBasics.csproj", "{4CB42D08-46CF-4AC9-BA7A-8293B3E47253}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParsingValues", "ParsingValues\ParsingValues.csproj", "{0FFF1CB3-D4B9-4B1C-9131-F238782AD415}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroceriesCalculator", "GroceriesCalculator\GroceriesCalculator.csproj", "{8874A37F-EEE9-4C96-BC24-E86301B736C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{4CB42D08-46CF-4AC9-BA7A-8293B3E47253}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CB42D08-46CF-4AC9-BA7A-8293B3E47253}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CB42D08-46CF-4AC9-BA7A-8293B3E47253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FFF1CB3-D4B9-4B1C-9131-F238782AD415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FFF1CB3-D4B9-4B1C-9131-F238782AD415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FFF1CB3-D4B9-4B1C-9131-F238782AD415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FFF1CB3-D4B9-4B1C-9131-F238782AD415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8874A37F-EEE9-4C96-BC24-E86301B736C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8874A37F-EEE9-4C96-BC24-E86301B736C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8874A37F-EEE9-4C96-BC24-E86301B736C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8874A37F-EEE9-4C96-BC24-E86301B736C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
