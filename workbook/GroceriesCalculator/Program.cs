@@ -8,10 +8,10 @@
 
 
 // These are our variables, we are using camelCase right now.
-float produceCosts;
-float breadCosts;
-float dairyCosts;
-float otherCosts;
+float ProduceCosts;
+float BreadCosts;
+float DairyCosts;
+float OtherCosts;
 
 const int NUMBER_OF_ROOMMATES = 4;
 
@@ -24,26 +24,26 @@ Console.WriteLine("This calculator will display the breakdown of how much each r
 // Prompt the user to enter produce cost
 Console.Write("Please enter the produce costs:\t");
 // Set the cost to the produceCost variable.
-produceCosts = float.Parse(Console.ReadLine());
+ProduceCosts = float.Parse(Console.ReadLine());
 
 // Prompt the user to enter bread cost
 Console.Write("Please enter the bread costs:\t");
 // Set the cost to the breadCost variable.
-breadCosts = float.Parse(Console.ReadLine());
+BreadCosts = float.Parse(Console.ReadLine());
 
 // Prompt the user to enter the cost of dairy
 Console.Write("Please enter the dairy cost:\t");
 // Set the cost of the dairyCost variable.
-dairyCosts = float.Parse(Console.ReadLine());
+DairyCosts = float.Parse(Console.ReadLine());
 
 // Prompt the user to enter the cost of other items
 Console.Write("Please enter the other item costs:\t");
 // Set the cost of the otherCosts variable.
-otherCosts = float.Parse(Console.ReadLine());
+OtherCosts = float.Parse(Console.ReadLine());
 
-Console.WriteLine($"Produce: {produceCosts / NUMBER_OF_ROOMMATES,20:$#,#.00}");
-Console.WriteLine($"Bread: {breadCosts / NUMBER_OF_ROOMMATES,20:$#,#.00}");
-Console.WriteLine($"Dairy: {dairyCosts / NUMBER_OF_ROOMMATES,20:$#,#.00}");
-Console.WriteLine($"Other: {otherCosts / NUMBER_OF_ROOMMATES,20:$#,#.00}");
+Console.WriteLine($"Produce: {ProduceCosts / NUMBER_OF_ROOMMATES,20:$#,#.00}");
+Console.WriteLine($"Bread: {BreadCosts / NUMBER_OF_ROOMMATES,20:$#,#.00}");
+Console.WriteLine($"Dairy: {DairyCosts / NUMBER_OF_ROOMMATES,20:$#,#.00}");
+Console.WriteLine($"Other: {OtherCosts / NUMBER_OF_ROOMMATES,20:$#,#.00}");
 
-Console.WriteLine($"Total cost for a roommate: {(produceCosts + breadCosts + dairyCosts + otherCosts) / NUMBER_OF_ROOMMATES:$#,#.00}");
+Console.WriteLine($"Total cost for a roommate: {(ProduceCosts + BreadCosts + DairyCosts + OtherCosts) / NUMBER_OF_ROOMMATES:$#,#.00}");
