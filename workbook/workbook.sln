@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToDataTypes", "IntroTo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputOutputBasics", "InputOutputBasics\InputOutputBasics.csproj", "{4CB42D08-46CF-4AC9-BA7A-8293B3E47253}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParsingValues", "ParsingValues\ParsingValues.csproj", "{0FFF1CB3-D4B9-4B1C-9131-F238782AD415}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParsingValues", "ParsingValues\ParsingValues.csproj", "{0FFF1CB3-D4B9-4B1C-9131-F238782AD415}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroceriesCalculator", "GroceriesCalculator\GroceriesCalculator.csproj", "{8874A37F-EEE9-4C96-BC24-E86301B736C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroceriesCalculator", "GroceriesCalculator\GroceriesCalculator.csproj", "{8874A37F-EEE9-4C96-BC24-E86301B736C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipCalculator", "TipCalculator\TipCalculator.csproj", "{55B7F556-1F7F-4DB2-A305-E6C778899D79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8874A37F-EEE9-4C96-BC24-E86301B736C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8874A37F-EEE9-4C96-BC24-E86301B736C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8874A37F-EEE9-4C96-BC24-E86301B736C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B7F556-1F7F-4DB2-A305-E6C778899D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B7F556-1F7F-4DB2-A305-E6C778899D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B7F556-1F7F-4DB2-A305-E6C778899D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B7F556-1F7F-4DB2-A305-E6C778899D79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
