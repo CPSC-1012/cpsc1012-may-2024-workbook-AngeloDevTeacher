@@ -15,12 +15,15 @@ decimal TipPercentage;
 // Declare a total amount as a decimal.
 decimal TotalAmount;
 
+// Output a program description.
 Console.WriteLine("I can calculate your tip.");
 
+// Prompt user to enter the total amount.
 Console.Write("Please enter your total amount:\t");
 TotalAmount = decimal.Parse(Console.ReadLine());
 
+// Prompt user to enter in tip percentage.
 Console.Write("Please enter your desired tip percentage:\t");
 TipPercentage = decimal.Parse(Console.ReadLine());
 
-Console.WriteLine($"Your {TipPercentage}% tip for the {TotalAmount} is {TotalAmount * (TipPercentage / 100m)}");
+Console.WriteLine($"Your {TipPercentage}% tip for the ${TotalAmount} is ${TotalAmount * (TipPercentage / 100m):#,#.00}");
