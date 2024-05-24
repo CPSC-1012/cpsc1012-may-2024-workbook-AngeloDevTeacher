@@ -26,4 +26,5 @@ TotalAmount = decimal.Parse(Console.ReadLine());
 Console.Write("Please enter your desired tip percentage:\t");
 TipPercentage = decimal.Parse(Console.ReadLine());
 
+// Display to the user the final output. Use the ":" to format the left side in the pattern of the right.
 Console.WriteLine($"Your {TipPercentage}% tip for the ${TotalAmount} is ${TotalAmount * (TipPercentage / 100m):#,#.00}");
