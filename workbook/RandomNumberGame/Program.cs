@@ -5,7 +5,7 @@
 /// The purpose of this program is to have a user type in a number, and have the computer
 /// provide a random number, for the user to compare against themself.
 /// 
-/// Author: Angelo Encarnacion angeloe@nait.ca
+/// Author: Angelo Encarnacion 
 /// Date: May 28th, 2024
 /// </summary>
 
