@@ -6,7 +6,7 @@
 // Now variables are DATA! We gotta name them to use them!
 
 // Making a variable requires a TYPE, then NAME, then "=", then VALUE
-string myFavouritePokemonOfAllTime = "Bulbasaur";
+string myFavouritePokemonOfAllTime = "Bulbasaur!";
 
 int aWholeNumberILike = 4096;
 float aDecimalNumberILike = 12.4f;
