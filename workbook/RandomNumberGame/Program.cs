@@ -18,16 +18,29 @@
 // DECLARE UserNumber As Interger
 
 // DISPLAY "---Random Number Maker---"
-// PROMPT "Enter a number between 1 and 10 for you to compare against: " UserNumber
+// PROMPT "Enter a number between 1 and 100 for you to compare against: " UserNumber
 // DISPLAY "The number was " RandomNumber " - did you get it right?"
 
 // Note from Angelo: Don't worry about this section, or the comments on the side!
 Random randomInstance = new Random(); // <- Don't worry about what this means!
-int randomNumber;
+int myRandomNumber;
 int userNumber;
 
-randomNumber = randomInstance.Next(1,10); // <- Same here
+myRandomNumber = randomInstance.Next(1,100); // <- Same here
 Console.WriteLine("---Random Number Maker---");
-Console.Write("Enter a number between 1 and 10 for you to compare against: ");
+Console.Write("Enter a number between 1 and 100 for you to compare against: ");
 userNumber = int.Parse(Console.ReadLine()); // <- currently does nothing, but we're gonna do something next after assignment 1.
-Console.WriteLine($"The number was {randomNumber} - did you get it right?");
+Console.WriteLine($"\n\n\nThe number was {myRandomNumber} - did you get it right?");
+
+if (userNumber == myRandomNumber)
+{
+    Console.WriteLine("You guessed the number!");
+}
+else if (userNumber < myRandomNumber)
+{
+    Console.WriteLine("The random number is bigger than your guess!");
+}
+else if (userNumber > myRandomNumber)
+{
+    Console.WriteLine("The random number is smaller than your guess!");
+}
