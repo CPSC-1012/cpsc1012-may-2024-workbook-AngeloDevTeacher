@@ -29,7 +29,7 @@ int userNumber;
 myRandomNumber = randomInstance.Next(1,100); // <- Same here
 Console.WriteLine("---Random Number Maker---");
 Console.Write("Enter a number between 1 and 100 for you to compare against: ");
-userNumber = int.Parse(Console.ReadLine()); // <- currently does nothing, but we're gonna do something next after assignment 1.
+userNumber = int.Parse(Console.ReadLine()); 
 Console.WriteLine($"\n\n\nThe number was {myRandomNumber} - did you get it right?");
 
 if (userNumber == myRandomNumber)
