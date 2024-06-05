@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TipCalculator", "TipCalcula
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanetGravityCalculator", "PlanetGravityCalculator\PlanetGravityCalculator.csproj", "{C123EB69-0C50-437F-8A35-162428CE8273}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomNumberGame", "RandomNumberGame\RandomNumberGame.csproj", "{C2931C96-8C62-44EF-A2F4-04D4B67D8735}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomNumberGame", "RandomNumberGame\RandomNumberGame.csproj", "{C2931C96-8C62-44EF-A2F4-04D4B67D8735}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleFormatting", "ConsoleFormatting\ConsoleFormatting.csproj", "{D3F77024-F793-48C5-8C85-C8D31C2940DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleFormatting", "ConsoleFormatting\ConsoleFormatting.csproj", "{D3F77024-F793-48C5-8C85-C8D31C2940DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToStrings", "IntroToStrings\IntroToStrings.csproj", "{14A297C4-6E32-4088-91EC-692E82D51565}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{D3F77024-F793-48C5-8C85-C8D31C2940DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3F77024-F793-48C5-8C85-C8D31C2940DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3F77024-F793-48C5-8C85-C8D31C2940DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14A297C4-6E32-4088-91EC-692E82D51565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A297C4-6E32-4088-91EC-692E82D51565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A297C4-6E32-4088-91EC-692E82D51565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A297C4-6E32-4088-91EC-692E82D51565}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
