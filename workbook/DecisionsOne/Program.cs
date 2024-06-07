@@ -21,63 +21,66 @@ Console.Write("Enter the number of the menu item: ");
 userChoice = int.Parse(Console.ReadLine());
 
 
-// Coin flip
-if (userChoice == 1)
+switch (userChoice)
 {
-    Console.Clear();
-    Console.Write("\t\t=============\n");
-    Console.Write("\t\t  Coin Flip  \n");
-    Console.Write("\t\t=============\n");
-    coinFlip = randomInstance.Next(0, 1);
-    // Prompt the user to choose 0 or 1
-    Console.Write("Choose [0] for heads and [1] for tails: ");
-    userChoice = int.Parse(Console.ReadLine());
+    case 1:
+        Console.Clear();
+        Console.Write("\t\t=============\n");
+        Console.Write("\t\t  Coin Flip  \n");
+        Console.Write("\t\t=============\n");
+        coinFlip = randomInstance.Next(0, 1);
+        // Prompt the user to choose 0 or 1
+        Console.Write("Choose [0] for heads and [1] for tails: ");
+        userChoice = int.Parse(Console.ReadLine());
 
-    if (!(userChoice == 0 || userChoice == 1))
-    {
-        Console.WriteLine("You did NOT choose 0 or 1.");
-    }
-    else
-    {
-        if (userChoice == coinFlip)
+        if (!(userChoice == 0 || userChoice == 1))
         {
-            Console.WriteLine("You guessed it right!");
+            Console.WriteLine("You did NOT choose 0 or 1.");
         }
         else
         {
-            Console.WriteLine("Sorry, you got it wrong!");
+            if (userChoice == coinFlip)
+            {
+                Console.WriteLine("You guessed it right!");
+            }
+            else
+            {
+                Console.WriteLine("Sorry, you got it wrong!");
+            }
         }
-    }
+        break;
 
+        case 2:
+        int dieRoll = randomInstance.Next(1, 6);
 
-} // END OF Coin Flip
-else if (userChoice == 2)
-{
-    int dieRoll = randomInstance.Next(1, 6);
+        Console.Clear();
+        Console.Write("\t\t=============\n");
+        Console.Write("\t\t  Dice Guess \n");
+        Console.Write("\t\t=============\n");
 
-    Console.Clear();
-    Console.Write("\t\t=============\n");
-    Console.Write("\t\t  Dice Guess \n");
-    Console.Write("\t\t=============\n");
+        Console.Write("Choose a die face from 1 to 6: ");
+        userChoice = int.Parse(Console.ReadLine());
 
-    Console.Write("Choose a die face from 1 to 6: ");
-    userChoice = int.Parse(Console.ReadLine());
-
-    if (userChoice < 1 || userChoice > 6)
-    {
-        Console.WriteLine("You inputted an invalid option.");
-    }
-    else
-    {
-        if (userChoice == dieRoll)
+        if (userChoice < 1 || userChoice > 6)
         {
-            Console.BackgroundColor = ConsoleColor.Green;
-            Console.WriteLine("You guessed it right!");
+            Console.WriteLine("You inputted an invalid option.");
         }
-        else 
+        else
         {
-            Console.BackgroundColor = ConsoleColor.Red;  
-            Console.WriteLine($"You guessed {userChoice} but it was {dieRoll}.");
+            if (userChoice == dieRoll)
+            {
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.WriteLine("You guessed it right!");
+            }
+            else
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.WriteLine($"You guessed {userChoice} but it was {dieRoll}.");
+            }
         }
-    }
+        break;
+
+    default:
+        Console.WriteLine($"{userChoice} was not a valid choice.");
+        break;
 }
