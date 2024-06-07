@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomNumberGame", "RandomN
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleFormatting", "ConsoleFormatting\ConsoleFormatting.csproj", "{D3F77024-F793-48C5-8C85-C8D31C2940DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToStrings", "IntroToStrings\IntroToStrings.csproj", "{14A297C4-6E32-4088-91EC-692E82D51565}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToStrings", "IntroToStrings\IntroToStrings.csproj", "{14A297C4-6E32-4088-91EC-692E82D51565}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecisionsOne", "DecisionsOne\DecisionsOne.csproj", "{552DB04D-6DF9-4FD9-B8A2-C96A04443FC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecisionsOne", "DecisionsOne\DecisionsOne.csproj", "{552DB04D-6DF9-4FD9-B8A2-C96A04443FC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConversionApp", "ConversionApp\ConversionApp.csproj", "{46AA5720-A295-4837-8B36-47B48C9D37B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{552DB04D-6DF9-4FD9-B8A2-C96A04443FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{552DB04D-6DF9-4FD9-B8A2-C96A04443FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{552DB04D-6DF9-4FD9-B8A2-C96A04443FC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46AA5720-A295-4837-8B36-47B48C9D37B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46AA5720-A295-4837-8B36-47B48C9D37B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46AA5720-A295-4837-8B36-47B48C9D37B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46AA5720-A295-4837-8B36-47B48C9D37B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
