@@ -33,11 +33,37 @@ switch (userInput)
 	case 1:
         Console.WriteLine("\n= Pounds to Kilograms =\n");
 
-        Console.Write("Please enter lbs to convert: ");
-        inputValue = decimal.Parse(Console.ReadLine());
+        Console.WriteLine("\nHow do you want to convert: ");
+        Console.WriteLine("[1] - lbs to kg");
+        Console.WriteLine("[2] - kg to lbs");
 
-        outputValue = inputValue * POUNDS_TO_KG;
-        Console.WriteLine($"\n{inputValue} lbs is {outputValue} kg.");
+        Console.Write("Please enter 1 or 2: ");
+        userInput = int.Parse(Console.ReadLine());
+
+
+        switch (userInput)
+        {
+            case 1:
+                Console.Write("Please enter lbs to convert: ");
+                inputValue = decimal.Parse(Console.ReadLine());
+
+                outputValue = inputValue * POUNDS_TO_KG;
+                Console.WriteLine($"\n{inputValue} lbs is {outputValue} kg.");
+                break;
+            case 2:
+                Console.Write("Please enter kg to convert: ");
+                inputValue = decimal.Parse(Console.ReadLine());
+
+                outputValue = inputValue / POUNDS_TO_KG;
+                Console.WriteLine($"\n{inputValue} kg is {outputValue} lbs.");
+                break;
+
+            default:
+                Console.WriteLine($"{userInput} was not a valid choice.");
+                break;
+        }
+
+
 		break;
     case 2:
         Console.WriteLine("= Fluid Ounces to Liters =");
@@ -48,7 +74,13 @@ switch (userInput)
 
         break;
     case 4:
-        Console.WriteLine("= Fahrenheit to Celsius =");
+        Console.WriteLine("\n= Fahrenheit to Celsius =\n");
+
+        Console.Write("Please enter temp in F to convert: ");
+        inputValue = decimal.Parse(Console.ReadLine());
+
+        outputValue = (inputValue - 32) / 1.800m;   
+        Console.WriteLine($"\n{inputValue} in F is {outputValue} in C.");
 
         break;
     default:
