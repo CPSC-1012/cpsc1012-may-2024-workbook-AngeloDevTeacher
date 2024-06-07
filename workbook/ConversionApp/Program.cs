@@ -40,7 +40,7 @@ switch (userInput)
         Console.Write("Please enter 1 or 2: ");
         userInput = int.Parse(Console.ReadLine());
 
-
+        // Try not to nest switches, but here is an example of a nested switch.
         switch (userInput)
         {
             case 1:
@@ -67,6 +67,35 @@ switch (userInput)
 		break;
     case 2:
         Console.WriteLine("= Fluid Ounces to Liters =");
+
+        Console.WriteLine("\nHow do you want to convert: ");
+        Console.WriteLine("[1] - oz to L");
+        Console.WriteLine("[2] - L to oz");
+
+        Console.Write("Please enter 1 or 2: ");
+        userInput = int.Parse(Console.ReadLine());
+        // I prefer the IF statement in most cases for small menus nested in switches.
+        if (userInput == 1)
+        {
+            Console.Write("Please enter oz to convert: ");
+            inputValue = decimal.Parse(Console.ReadLine());
+
+            outputValue = inputValue * OUNCE_TO_LITER;
+            Console.WriteLine($"\n{inputValue} oz is {outputValue} L.");
+        }
+        else if (userInput == 2)
+        {
+            Console.Write("Please enter L to convert: ");
+            inputValue = decimal.Parse(Console.ReadLine());
+
+            outputValue = inputValue / OUNCE_TO_LITER;
+            Console.WriteLine($"\n{inputValue} L is {outputValue} oz.");
+        }
+        else
+        {
+            Console.WriteLine($"{userInput} was not a valid choice.");
+            break;
+        }
 
         break;
     case 3:
