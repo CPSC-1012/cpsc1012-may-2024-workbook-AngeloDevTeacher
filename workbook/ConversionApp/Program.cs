@@ -62,13 +62,11 @@ switch (userInput)
                 Console.WriteLine($"{userInput} was not a valid choice.");
                 break;
         }
-
-
-		break;
+		break; // END OF case 1
     case 2:
-        Console.WriteLine("= Fluid Ounces to Liters =");
+        Console.WriteLine("\n= Fluid Ounces to Liters =\n");
 
-        Console.WriteLine("\nHow do you want to convert: ");
+        Console.WriteLine("How do you want to convert: ");
         Console.WriteLine("[1] - oz to L");
         Console.WriteLine("[2] - L to oz");
 
@@ -94,10 +92,10 @@ switch (userInput)
         else
         {
             Console.WriteLine($"{userInput} was not a valid choice.");
-            break;
         }
 
-        break;
+        break; // END OF case 2
+
     case 3:
         Console.WriteLine("= Inches to centimeters =");
 
