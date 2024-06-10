@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+
+// Hi Jay
 int userChoice = 0;
 
 Random randomInstance = new Random();
