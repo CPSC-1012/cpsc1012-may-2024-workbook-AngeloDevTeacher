@@ -54,50 +54,54 @@ switch (userChoice)
         break;
 
         case 2:
-        int dieRoll = randomInstance.Next(1, 6);
-
-        Console.Clear();
-        Console.Write("\t\t=============\n");
-        Console.Write("\t\t  Dice Guess \n");
-        Console.Write("\t\t=============\n");
-        while (gameWon != true)
+        do
         {
-            Console.Write("Choose a die face from 1 to 6: ");
-            userChoice = int.Parse(Console.ReadLine());
+            int dieRoll = randomInstance.Next(1, 6);
+            gameWon = false;
 
-            if (userChoice < 1 || userChoice > 6)
+            Console.Clear();
+            Console.Write("\t\t=============\n");
+            Console.Write("\t\t  Dice Guess \n");
+            Console.Write("\t\t=============\n");
+            while (gameWon != true)
             {
-                Console.WriteLine("You inputted an invalid option.");
+                Console.Write("Choose a die face from 1 to 6: ");
+                userChoice = int.Parse(Console.ReadLine());
+
+                if (userChoice < 1 || userChoice > 6)
+                {
+                    Console.WriteLine("You inputted an invalid option.");
+                }
+                else
+                {
+                    if (userChoice == dieRoll)
+                    {
+                        Console.WriteLine("You guessed it right!");
+                        gameWon = true;
+                    }
+                    else if (userChoice < dieRoll)
+                    {
+                        Console.WriteLine("You guessed too small!");
+                    }
+                    else if (userChoice > dieRoll)
+                    {
+                        Console.WriteLine("You guessed too big!");
+                    }
+                    //Console.Write("Press enter to continue: ");
+                    //Console.ReadLine();
+                }
+            }
+            Console.Write("Do you want to play again?\n\t[1] - Yes\n\t[2] - No\n\tPlease select (1 or 2): ");
+            userChoice = int.Parse(Console.ReadLine());
+            if (userChoice == 1)
+            {
+                playAgain = true;
             }
             else
             {
-                if (userChoice == dieRoll)
-                {
-                    Console.WriteLine("You guessed it right!");
-                    gameWon = true;
-                }
-                else if (userChoice < dieRoll)
-                {
-                    Console.WriteLine("You guessed too small!");
-                }
-                else if (userChoice > dieRoll)
-                {
-                    Console.WriteLine("You guessed too big!");
-                }
-                Console.Write("Press enter to continue: ");
-                Console.ReadLine();
+                playAgain = false;
             }
-        }
-        Console.Write("Do you want to play again?\n\t[1] - Yes\n\t[2] - No\n\tPlease select (1 or 2): ");
-        userChoice = int.Parse(Console.ReadLine());
-        if (userChoice == 1)
-        {
-            playAgain = true;
-        }
-        else
-        {
-            playAgain = false;
-        }
+        } while (playAgain == true);
         break;
 
     default:
