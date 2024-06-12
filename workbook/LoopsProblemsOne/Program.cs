@@ -29,3 +29,30 @@ for (int i = 1; i <= MySquare; i++)
 }
 // Output to the user - solve the problem
 Console.WriteLine($"\nThe sum is {Sum}");
+
+
+/// <summary>
+/// Print out the input backwards.
+/// 
+/// Name: Angelo Encarnacion
+/// Date: June 11 2024
+/// </summary>
+
+// Variable - following problem naming convention:
+string N = "";
+
+// Program Start
+Console.WriteLine("///////////////");
+Console.WriteLine("Reverse Digits ");
+Console.WriteLine("///////////////");
+
+// Prompt the user.
+Console.WriteLine("I will reverse the digits you provide to me.");
+Console.Write("\tPlease enter an integer: ");
+N = Console.ReadLine();
+
+// Do our steps:
+for (int i = N.Length - 1; i >= 0; i--)
+{
+    Console.WriteLine( N[i] );
+}
