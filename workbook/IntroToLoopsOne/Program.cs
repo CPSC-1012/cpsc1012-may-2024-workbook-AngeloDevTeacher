@@ -30,3 +30,24 @@ while (j < 10)
     j += 1;
     //j = j + 1;
 }
+
+// Example of something that will end:
+string name = "Angelo Encarnacion";
+for (int i = 0;i < name.Length; i++)
+{
+    Console.WriteLine(name[i]);
+}
+
+// Exmaple of a BAD for loop:
+Console.WriteLine("Add a letter to Angelo's name");
+for (int i = 0; i < 5; i++)
+{
+    Console.Write("Add a letter: ");
+    Console.ReadLine();
+}
+
+// BONUS: Foreach loop does the entire collection.
+foreach (var letter in "Angelo Encarnacion")
+{
+    Console.WriteLine(letter);
+}
