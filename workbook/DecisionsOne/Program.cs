@@ -84,8 +84,18 @@ switch (userChoice)
                 {
                     Console.WriteLine("You guessed too big!");
                 }
-                Console.Write("Press enter to continue . . .");
+                Console.Write("Press enter to continue: ");
                 Console.ReadLine();
+            }
+            Console.Write("Do you want to play again?\n\t[1] - Yes\n\t[2] - No\n\tPlease select (1 or 2): ");
+            userChoice = int.Parse(Console.ReadLine());
+            if (userChoice == 1)
+            {
+                playAgain = true;
+            }
+            else
+            {
+                playAgain = false;
             }
         }
         break;
