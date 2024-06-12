@@ -1,8 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
-// Hi Jay
 int userChoice = 0;
+bool playAgain = true;
 
 Random randomInstance = new Random();
 int coinFlip = 0;
@@ -53,33 +53,36 @@ switch (userChoice)
         break;
 
         case 2:
-        int dieRoll = randomInstance.Next(1, 6);
-
-        Console.Clear();
-        Console.Write("\t\t=============\n");
-        Console.Write("\t\t  Dice Guess \n");
-        Console.Write("\t\t=============\n");
-
-        Console.Write("Choose a die face from 1 to 6: ");
-        userChoice = int.Parse(Console.ReadLine());
-
-        if (userChoice < 1 || userChoice > 6)
+        while (playAgain == true)
         {
-            Console.WriteLine("You inputted an invalid option.");
-        }
-        else
-        {
-            if (userChoice == dieRoll)
+            int dieRoll = randomInstance.Next(1, 6);
+
+            Console.Clear();
+            Console.Write("\t\t=============\n");
+            Console.Write("\t\t  Dice Guess \n");
+            Console.Write("\t\t=============\n");
+
+            Console.Write("Choose a die face from 1 to 6: ");
+            userChoice = int.Parse(Console.ReadLine());
+
+            if (userChoice < 1 || userChoice > 6)
             {
-                Console.WriteLine("You guessed it right!");
+                Console.WriteLine("You inputted an invalid option.");
             }
-            else if (userChoice < dieRoll)
+            else
             {
-                Console.WriteLine("You guessed too small!");
-            }
-            else if (userChoice > dieRoll)
-            {
-                Console.WriteLine("You guessed too big!");
+                if (userChoice == dieRoll)
+                {
+                    Console.WriteLine("You guessed it right!");
+                }
+                else if (userChoice < dieRoll)
+                {
+                    Console.WriteLine("You guessed too small!");
+                }
+                else if (userChoice > dieRoll)
+                {
+                    Console.WriteLine("You guessed too big!");
+                }
             }
         }
         break;
