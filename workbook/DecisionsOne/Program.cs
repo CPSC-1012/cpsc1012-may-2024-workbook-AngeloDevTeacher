@@ -74,6 +74,14 @@ switch (userChoice)
                 //Console.BackgroundColor = ConsoleColor.Green;
                 Console.WriteLine("You guessed it right!");
             }
+            else if (userChoice < dieRoll)
+            {
+                Console.WriteLine("You guessed too small!");
+            }
+            else if (userChoice > dieRoll)
+            {
+                Console.WriteLine("You guessed too big!");
+            }
             else
             {
                 //Console.BackgroundColor = ConsoleColor.Red;
