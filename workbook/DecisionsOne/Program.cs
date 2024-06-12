@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
-int userChoice = 0;
+int userChoice;
 bool gameWon = false;
 bool playAgain = false;
 
@@ -63,6 +63,7 @@ switch (userChoice)
             Console.Write("\t\t=============\n");
             Console.Write("\t\t  Dice Guess \n");
             Console.Write("\t\t=============\n");
+            // Game Loop
             while (gameWon != true)
             {
                 Console.Write("Choose a die face from 1 to 6: ");
@@ -87,10 +88,8 @@ switch (userChoice)
                     {
                         Console.WriteLine("You guessed too big!");
                     }
-                    //Console.Write("Press enter to continue: ");
-                    //Console.ReadLine();
                 }
-            }
+            } // END OF Game Loop
             Console.Write("Do you want to play again?\n\t[1] - Yes\n\t[2] - No\n\tPlease select (1 or 2): ");
             userChoice = int.Parse(Console.ReadLine());
             if (userChoice == 1)

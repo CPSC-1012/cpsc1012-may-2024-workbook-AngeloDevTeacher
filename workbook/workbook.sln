@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToStrings", "IntroToSt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecisionsOne", "DecisionsOne\DecisionsOne.csproj", "{552DB04D-6DF9-4FD9-B8A2-C96A04443FC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConversionApp", "ConversionApp\ConversionApp.csproj", "{46AA5720-A295-4837-8B36-47B48C9D37B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConversionApp", "ConversionApp\ConversionApp.csproj", "{46AA5720-A295-4837-8B36-47B48C9D37B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToLoopsOne", "IntroToLoopsOne\IntroToLoopsOne.csproj", "{CBDFAC87-B02E-46F0-B2EA-DA9BEC6F7B8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{46AA5720-A295-4837-8B36-47B48C9D37B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46AA5720-A295-4837-8B36-47B48C9D37B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46AA5720-A295-4837-8B36-47B48C9D37B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBDFAC87-B02E-46F0-B2EA-DA9BEC6F7B8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBDFAC87-B02E-46F0-B2EA-DA9BEC6F7B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBDFAC87-B02E-46F0-B2EA-DA9BEC6F7B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBDFAC87-B02E-46F0-B2EA-DA9BEC6F7B8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
