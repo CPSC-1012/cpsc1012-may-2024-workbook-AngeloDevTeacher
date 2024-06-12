@@ -15,3 +15,18 @@ do
 {
     Console.WriteLine("Hello world!");
 } while (false);
+
+//  init i,    condition, inc
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine($"Hello world {i}");
+}
+
+// Same as above in a while loop
+int j = 0;
+while (j < 10)
+{
+    Console.WriteLine($"Hello class {j}");
+    j += 1;
+    //j = j + 1;
+}
