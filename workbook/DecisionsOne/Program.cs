@@ -71,12 +71,12 @@ switch (userChoice)
         {
             if (userChoice == dieRoll)
             {
-                Console.BackgroundColor = ConsoleColor.Green;
+                //Console.BackgroundColor = ConsoleColor.Green;
                 Console.WriteLine("You guessed it right!");
             }
             else
             {
-                Console.BackgroundColor = ConsoleColor.Red;
+                //Console.BackgroundColor = ConsoleColor.Red;
                 Console.WriteLine($"You guessed {userChoice} but it was {dieRoll}.");
             }
         }
