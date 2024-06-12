@@ -2,7 +2,8 @@
 
 
 int userChoice = 0;
-bool playAgain = true;
+bool gameWon = false;
+bool playAgain = false;
 
 Random randomInstance = new Random();
 int coinFlip = 0;
@@ -53,15 +54,14 @@ switch (userChoice)
         break;
 
         case 2:
-        while (playAgain == true)
+        int dieRoll = randomInstance.Next(1, 6);
+
+        Console.Clear();
+        Console.Write("\t\t=============\n");
+        Console.Write("\t\t  Dice Guess \n");
+        Console.Write("\t\t=============\n");
+        while (gameWon != true)
         {
-            int dieRoll = randomInstance.Next(1, 6);
-
-            Console.Clear();
-            Console.Write("\t\t=============\n");
-            Console.Write("\t\t  Dice Guess \n");
-            Console.Write("\t\t=============\n");
-
             Console.Write("Choose a die face from 1 to 6: ");
             userChoice = int.Parse(Console.ReadLine());
 
@@ -74,6 +74,7 @@ switch (userChoice)
                 if (userChoice == dieRoll)
                 {
                     Console.WriteLine("You guessed it right!");
+                    gameWon = true;
                 }
                 else if (userChoice < dieRoll)
                 {
@@ -83,6 +84,8 @@ switch (userChoice)
                 {
                     Console.WriteLine("You guessed too big!");
                 }
+                Console.Write("Press enter to continue . . .");
+                Console.ReadLine();
             }
         }
         break;
