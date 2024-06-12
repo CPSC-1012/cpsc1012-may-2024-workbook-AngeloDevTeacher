@@ -82,11 +82,11 @@ switch (userChoice)
             {
                 Console.WriteLine("You guessed too big!");
             }
-            else
-            {
-                //Console.BackgroundColor = ConsoleColor.Red;
-                Console.WriteLine($"You guessed {userChoice} but it was {dieRoll}.");
-            }
+            //else
+            //{
+            //    //Console.BackgroundColor = ConsoleColor.Red;
+            //    Console.WriteLine($"You guessed {userChoice} but it was {dieRoll}.");
+            //}
         }
         break;
 
