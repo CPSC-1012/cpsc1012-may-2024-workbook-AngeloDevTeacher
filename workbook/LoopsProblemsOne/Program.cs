@@ -38,7 +38,7 @@ Console.WriteLine($"\nThe sum is {Sum}");
 /// </summary>
 
 // Numbers to calculate average.
-int ageSum = 0;
+decimal ageSum = 0;
 int numberCount = 0;
 
 // User input variable.
@@ -61,22 +61,23 @@ do
     {
         Console.WriteLine(e.Message);
         userInput = -1;
-        //save backup here
-        //report to server about crash
-        //crash if I wanna
     }
     if (userInput < 0)
     {
         Console.WriteLine("Number was not a positive integer.");
         Console.WriteLine("Please enter a positive number.");
     } // end if
+    else if (userInput == 0)
+    {
+        Console.WriteLine("Ending input.");
+    }
     else
     {
         ageSum += userInput;
         numberCount++;
     } // end else
 } while (userInput != 0);
-Console.WriteLine($"The average of the {numberCount - 1} numbers was {ageSum / (numberCount - 1)}.");
+Console.WriteLine($"The average of the {numberCount} numbers was {ageSum / (numberCount)}.");
 
 
 /// <summary>
