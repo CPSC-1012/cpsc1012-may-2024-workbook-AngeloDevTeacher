@@ -81,7 +81,7 @@ for (int i = 0; i < height; i++)
 }
 
 
-// XXXXXXX
+// XXXXXXX 7w,6h
 // X     X
 // X     X
 // X     X
@@ -126,13 +126,19 @@ do
 } while (emptyWidth < 1 && emptyHeight < 1);
 
 emptyLine = "";
-Console.Clear();
-for (int i = 0; i < emptyHeight; i++)
+for (int y = 0; y < emptyHeight; y++)
 {
-    emptyLine = $"Iteration {i}: ";
-    for (int j = 0;j < emptyWidth; j++)
+    emptyLine = "";
+    for (int x = 0; x < emptyWidth; x++)
     {
-        emptyLine += $"{j}, ";
+        if (x == 0 || y == 0 || x == emptyWidth - 1 || y == emptyHeight - 1)
+        {
+            emptyLine += "X";
+        }
+        else
+        {
+            emptyLine += "s";
+        }
     }
     Console.WriteLine(emptyLine);
 }
