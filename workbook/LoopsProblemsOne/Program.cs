@@ -53,8 +53,17 @@ do
 {
     Console.Write("Enter an age (a positive whole number): ");
     userInput = int.Parse(Console.ReadLine());
-    ageSum += userInput;
-    numberCount++;
+
+    if (userInput < 0)
+    {
+        Console.WriteLine("Number was not a positive integer.");
+        Console.WriteLine("Please enter a positive number.");
+    } // end if
+    else
+    {
+        ageSum += userInput;
+        numberCount++;
+    } // end else
 } while (userInput != 0);
 Console.WriteLine($"The average of the {numberCount - 1} numbers was {ageSum / (numberCount - 1)}.");
 
