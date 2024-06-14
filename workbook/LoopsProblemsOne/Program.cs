@@ -77,7 +77,16 @@ do
         numberCount++;
     } // end else
 } while (userInput != 0);
-Console.WriteLine($"The average of the {numberCount} numbers was {ageSum / (numberCount)}.");
+try
+{
+    Console.WriteLine($"The average of the {numberCount} numbers was {ageSum / (numberCount)}.");
+}
+catch (Exception e)
+{
+    // The ONLY error i would expect right here is a divide by zero BECAUSE of my defensive programming above.
+    Console.WriteLine("There were no positive integers provided, so no average could be calcualted.");
+}
+
 
 
 /// <summary>
