@@ -27,9 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecisionsOne", "DecisionsOn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConversionApp", "ConversionApp\ConversionApp.csproj", "{46AA5720-A295-4837-8B36-47B48C9D37B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToLoopsOne", "IntroToLoopsOne\IntroToLoopsOne.csproj", "{CBDFAC87-B02E-46F0-B2EA-DA9BEC6F7B8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToLoopsOne", "IntroToLoopsOne\IntroToLoopsOne.csproj", "{CBDFAC87-B02E-46F0-B2EA-DA9BEC6F7B8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopsProblemsOne", "LoopsProblemsOne\LoopsProblemsOne.csproj", "{A86195DA-1944-4687-9913-9526B8E1CC64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoopsProblemsOne", "LoopsProblemsOne\LoopsProblemsOne.csproj", "{A86195DA-1944-4687-9913-9526B8E1CC64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopsProblemsTwoAndThree", "LoopsProblemsTwoAndThree\LoopsProblemsTwoAndThree.csproj", "{0016B745-3829-437F-B0A8-8F30344424A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{A86195DA-1944-4687-9913-9526B8E1CC64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A86195DA-1944-4687-9913-9526B8E1CC64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A86195DA-1944-4687-9913-9526B8E1CC64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0016B745-3829-437F-B0A8-8F30344424A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0016B745-3829-437F-B0A8-8F30344424A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0016B745-3829-437F-B0A8-8F30344424A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0016B745-3829-437F-B0A8-8F30344424A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
