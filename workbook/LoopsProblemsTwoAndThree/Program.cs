@@ -1,5 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+
+// Variables
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
 /// <summary>
 /// Create a program that displays a standard calendar with the amount of days and the start day of week provided by the user.
 /// 
@@ -13,6 +17,8 @@ int currentDate = 1;
 
 string startDayOfWeek;
 int offset;
+
+string weekDisplay;
 
 
 // Start of Program
@@ -56,7 +62,15 @@ switch (startDayOfWeek)
 
 Console.WriteLine("Sun   Mon   Tue   Wed   Thu   Fri   Sat");
 
-
+for (int week = 0; week < 6; week++)
+{
+    weekDisplay = "";
+    for (int date = 1; date <= 7 && date + (week * 7) <= daysInMonth; date++)
+    {
+        weekDisplay = weekDisplay + $" {date + (week * 7), -5}";
+    }
+    Console.WriteLine(weekDisplay);
+}
 
 
 /// <summary>
