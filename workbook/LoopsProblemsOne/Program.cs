@@ -46,6 +46,9 @@ int userInput = 0;
 
 
 // Start of program logic
+Console.WriteLine("////////////////");
+Console.WriteLine("Average Age Calc");
+Console.WriteLine("////////////////");
 do
 {
     Console.Write("Enter an age (a positive whole number): ");
