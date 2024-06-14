@@ -53,7 +53,7 @@ do
     ageSum += userInput;
     numberCount++;
 } while (userInput != 0);
-Console.WriteLine($"The average of the {numberCount} numbers was {ageSum}.");
+Console.WriteLine($"The average of the {numberCount - 1} numbers was {ageSum / (numberCount - 1)}.");
 
 
 /// <summary>
