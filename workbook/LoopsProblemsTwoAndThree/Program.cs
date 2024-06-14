@@ -59,7 +59,7 @@ do
         Console.WriteLine("Please enter a positive interger.");
     }
 
-} while (width != 0 && height != 0);
+} while (width < 1 && height < 1);
 
 
 for (int i = 0; i < height; i++)
@@ -123,14 +123,16 @@ do
         Console.WriteLine("Please enter a positive interger.");
     }
 
-} while (emptyWidth > 0 && emptyHeight > 0);
+} while (emptyWidth < 1 && emptyHeight < 1);
 
 emptyLine = "";
-
+Console.Clear();
 for (int i = 0; i < emptyHeight; i++)
 {
+    emptyLine = $"Iteration {i}: ";
     for (int j = 0;j < emptyWidth; j++)
     {
-
+        emptyLine += $"{j}, ";
     }
+    Console.WriteLine(emptyLine);
 }
