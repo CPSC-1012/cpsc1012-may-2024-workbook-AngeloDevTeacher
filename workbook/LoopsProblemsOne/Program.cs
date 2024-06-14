@@ -30,6 +30,31 @@ for (int i = 1; i <= MySquare; i++)
 // Output to the user - solve the problem
 Console.WriteLine($"\nThe sum is {Sum}");
 
+/// <summary>
+/// Give the average of positive intergers inputted by the user. Stop the prompt when the user inputs 0.
+/// 
+/// Name: Angelo Encarnacion
+/// Date: June 13th 2024
+/// </summary>
+
+// Numbers to calculate average.
+int ageSum = 0;
+int numberCount = 0;
+
+// User input variable.
+int userInput = 0;
+
+
+// Start of program logic
+do
+{
+    Console.Write("Enter an age (a positive whole number): ");
+    userInput = int.Parse(Console.ReadLine());
+    ageSum += userInput;
+    numberCount++;
+} while (userInput != 0);
+Console.WriteLine($"The average of the {numberCount} numbers was {ageSum}.");
+
 
 /// <summary>
 /// Print out the input backwards.
