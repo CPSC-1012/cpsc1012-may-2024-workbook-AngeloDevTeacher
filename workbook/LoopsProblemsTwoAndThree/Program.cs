@@ -81,3 +81,56 @@ for (int i = 0; i < height; i++)
 }
 
 
+// XXXXXXX
+// X     X
+// X     X
+// X     X
+// X     X
+// XXXXXXX
+
+/// <summary>
+/// Create an empty shape with a border based on provided width and height.
+/// </summary>
+/// 
+
+int emptyWidth = 0;
+int emptyHeight = 0;
+string emptyLine = "";
+
+Console.WriteLine("XXXXXXXXXXXXXXXX");
+Console.WriteLine("  Empty  Shape  ");
+Console.WriteLine("XXXXXXXXXXXXXXXX");
+
+
+do
+{
+    try
+    {
+        Console.Write("Enter a width: ");
+        emptyWidth = int.Parse(Console.ReadLine());
+    }
+    catch (Exception)
+    {
+        Console.WriteLine("Please enter a positive interger.");
+    }
+    try
+    {
+        Console.Write("Enter a height: ");
+        emptyHeight = int.Parse(Console.ReadLine());
+    }
+    catch (Exception)
+    {
+        Console.WriteLine("Please enter a positive interger.");
+    }
+
+} while (emptyWidth > 0 && emptyHeight > 0);
+
+emptyLine = "";
+
+for (int i = 0; i < emptyHeight; i++)
+{
+    for (int j = 0;j < emptyWidth; j++)
+    {
+
+    }
+}
