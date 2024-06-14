@@ -51,9 +51,20 @@ Console.WriteLine("Average Age Calc");
 Console.WriteLine("////////////////");
 do
 {
-    Console.Write("Enter an age (a positive whole number): ");
-    userInput = int.Parse(Console.ReadLine());
 
+    try
+    {
+        Console.Write("Enter an age (a positive whole number): ");
+        userInput = int.Parse(Console.ReadLine());
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+        userInput = -1;
+        //save backup here
+        //report to server about crash
+        //crash if I wanna
+    }
     if (userInput < 0)
     {
         Console.WriteLine("Number was not a positive integer.");
