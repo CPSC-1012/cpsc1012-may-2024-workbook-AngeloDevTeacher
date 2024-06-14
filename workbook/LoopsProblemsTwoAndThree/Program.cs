@@ -34,15 +34,33 @@ Console.WriteLine("////////////////");
 /// </summary>
 
 
-int width;
-int height;
+int width = 0;
+int height = 0;
 string line = "";
 
-Console.Write("Enter a width: ");
-width = int.Parse(Console.ReadLine());
+do
+{
+    try
+    {
+        Console.Write("Enter a width: ");
+        width = int.Parse(Console.ReadLine());
+    }
+    catch (Exception)
+    {
+        Console.WriteLine("Please enter a positive interger.");
+    }
+    try
+    {
+        Console.Write("Enter a height: ");
+        height = int.Parse(Console.ReadLine());
+    }
+    catch (Exception)
+    {
+        Console.WriteLine("Please enter a positive interger.");
+    }
 
-Console.Write("Enter a height: ");
-height = int.Parse(Console.ReadLine());
+} while (width != 0 && height != 0);
+
 
 for (int i = 0; i < height; i++)
 {
@@ -61,3 +79,5 @@ for (int i = 0; i < height; i++)
     }
     Console.WriteLine(line);
 }
+
+
