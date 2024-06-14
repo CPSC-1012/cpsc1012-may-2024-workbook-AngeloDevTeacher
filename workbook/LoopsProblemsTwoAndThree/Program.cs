@@ -10,7 +10,9 @@
 // Variables
 int daysInMonth;
 int currentDate = 1;
+
 string startDayOfWeek;
+int offset;
 
 
 // Start of Program
@@ -18,13 +20,44 @@ Console.WriteLine("////////////////");
 Console.WriteLine("Calendar display");
 Console.WriteLine("////////////////");
 
-// EXAMPLE SECTION
+Console.Write("Enter number of days in the month: ");
+daysInMonth = int.Parse(Console.ReadLine());
 
-// xoxox
-// oxoxo ooooo
-// xoxox
-// oxoxo
-// xoxox
+Console.Write("Enter the starting day of the month: ");
+startDayOfWeek = Console.ReadLine();
+
+switch (startDayOfWeek)
+{
+    case "Sun":
+        offset = 0;
+        break;
+    case "Mon":
+        offset = 1;
+        break;
+    case "Tue":
+        offset = 2;
+        break;
+    case "Wed":
+        offset = 3;
+        break;
+    case "Thu":
+        offset = 4;
+        break;
+    case "Fri":
+        offset = 5;
+        break;
+    case "Sat":
+        offset = 6;
+        break;
+    default:
+        offset = 0;
+        break;
+}
+
+Console.WriteLine("Sun   Mon   Tue   Wed   Thu   Fri   Sat");
+
+
+
 
 /// <summary>
 /// Make a grid of alternating "x"'s and "o"'s
