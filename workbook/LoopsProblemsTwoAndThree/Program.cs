@@ -59,15 +59,21 @@ switch (startDayOfWeek)
         offset = 0;
         break;
 }
-
+// Angelo will make a video on how to do this another way during week 9 + 10
 Console.WriteLine("Sun   Mon   Tue   Wed   Thu   Fri   Sat");
-
 for (int week = 0; week < 6; week++)
 {
     weekDisplay = "";
-    for (int date = 1; date <= 7 && date + (week * 7) <= daysInMonth; date++)
+    for (int date = 1; date <= 7 && date + (week * 7) <= daysInMonth + offset; date++)
     {
-        weekDisplay = weekDisplay + $" {date + (week * 7), -5}";
+        if (date + (week * 7) <= offset)
+        {
+            weekDisplay = weekDisplay + $"      ";
+        }
+        else
+        {
+            weekDisplay = weekDisplay + $" {(date - offset) + (week * 7),-5}";
+        }
     }
     Console.WriteLine(weekDisplay);
 }
