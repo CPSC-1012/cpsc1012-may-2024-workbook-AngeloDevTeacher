@@ -53,3 +53,90 @@
 
 // Display lottoNumbers
 
+
+// Variables
+string userInput = "";
+string outputValue = "";
+
+int[] lottoNumbers;
+int lottoLength = 0;
+int lottoRangeStart = 0;
+int lottoRangeEnd = 0;
+
+Random randomInstance = new Random();
+int randomNumber;
+bool uniqueNumber = false;
+
+// Program Start
+Console.WriteLine("-----Lotto Ticket Generator-----");
+Console.WriteLine("This program will create lotto numbers for you.");
+
+// Prompts
+
+do
+{
+    try
+    {
+        Console.Write("Enter the number of lotto numbers: ");
+        lottoLength = int.Parse(Console.ReadLine());
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("You have entered an invalid value.");
+        lottoLength = -1;
+    }
+} while (lottoLength <= 1);
+
+
+do
+{
+
+    try
+    {
+        Console.Write("Enter the start range of the lotto numbers: ");
+        lottoRangeStart = int.Parse(Console.ReadLine());
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("You have entered an invalid value.");
+    }
+    try
+    {
+        Console.Write("Enter the end range of the lotto numbers: ");
+        lottoRangeEnd = int.Parse(Console.ReadLine());
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("You have entered an invalid value.");
+    }
+    if (lottoRangeEnd - lottoRangeStart < lottoLength)
+    {
+        Console.WriteLine("The range must be greater than the length of the lotto ticket.");
+    }
+} while (lottoRangeEnd - lottoRangeStart < lottoLength);
+
+lottoNumbers = new int[lottoLength];
+randomNumber = 0;
+
+for (int i = 0; i < lottoLength; i++)
+{
+    do
+    {
+        uniqueNumber = false;
+        randomNumber = randomInstance.Next(lottoRangeStart, lottoRangeEnd);
+        if (!lottoNumbers.Contains(randomNumber))
+        {
+            uniqueNumber = true;
+            lottoNumbers[i] = randomNumber;
+        }
+    } while (false);
+}
+
+for (int i = 0; i < lottoLength-1; i++)
+{
+    outputValue += $"{lottoNumbers[i]} ";
+}
+
+Console.WriteLine(outputValue);
+
+// Display lottoNumbers
