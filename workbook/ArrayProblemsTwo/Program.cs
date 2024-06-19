@@ -132,7 +132,7 @@ for (int i = 0; i < lottoLength; i++)
     } while (uniqueNumber == false);
 }
 
-for (int i = 0; i < lottoLength-1; i++)
+for (int i = 0; i < lottoLength; i++)
 {
     outputValue += $"{lottoNumbers[i]} ";
 }
