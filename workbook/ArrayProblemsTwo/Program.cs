@@ -129,7 +129,7 @@ for (int i = 0; i < lottoLength; i++)
             uniqueNumber = true;
             lottoNumbers[i] = randomNumber;
         }
-    } while (false);
+    } while (uniqueNumber == false);
 }
 
 for (int i = 0; i < lottoLength-1; i++)
