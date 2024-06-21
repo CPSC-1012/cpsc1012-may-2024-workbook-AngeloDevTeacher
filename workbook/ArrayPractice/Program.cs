@@ -22,3 +22,23 @@ for (int i = 0; i < rainbowColours.Length; i++)
     pigLatinMessage += "ay ";
 }
 Console.WriteLine(pigLatinMessage);
+
+// Pretending this is a program, make a pig latin generator for real.
+
+string userInput;
+string programOutput = "";
+string[] phrase;
+
+Console.WriteLine("---Pig Latin Generator---");
+userInput = Console.ReadLine();
+
+phrase = userInput.Split(" ");
+
+
+for (int i = 0;i < phrase.Length;i++)
+{
+    programOutput += phrase[i].Substring(1, phrase[i].Length - 1);
+    programOutput += phrase[i][0];
+    programOutput += "ay ";
+}
+Console.WriteLine(programOutput);
