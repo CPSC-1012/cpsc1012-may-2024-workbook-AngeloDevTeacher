@@ -40,5 +40,6 @@ for (int i = 0;i < phrase.Length;i++)
     programOutput += phrase[i].Substring(1, phrase[i].Length - 1);
     programOutput += phrase[i][0];
     programOutput += "ay ";
+    //programOutput += phrase[i].Substring(1, phrase[i].Length - 1) + phrase[i][0] + "ay ";
 }
 Console.WriteLine(programOutput);
