@@ -20,6 +20,7 @@ using System.Diagnostics.CodeAnalysis;
 string userInput;
 int userSelection;
 string output;
+decimal priceTotal = 0m;
 
 const decimal CHILDREN_PRICING = 0.00m;
 const decimal STUDENT_PRICING = 9.80m;
@@ -76,7 +77,15 @@ int ProgramMenu()
 
 void DisplayTicketPrice(string priceTitle, decimal price)
 {
-    Console.WriteLine($"{priceTitle} Price: ${price:#,#.00}");
+    Console.WriteLine($"{priceTitle,-9} Price: {price,6:$#,0.00}");
+}
+
+int GetAge()
+{
+    Console.Write("Enter an age: ");
+    userInput = Console.ReadLine();
+
+    return int.Parse(userInput);
 }
 
 
@@ -89,14 +98,25 @@ void TicketMainProgram()
     switch (userSelection)
     {
         case 1:
+            DisplayTicketPrice("Child",    CHILDREN_PRICING);
+            DisplayTicketPrice("Student",  STUDENT_PRICING);
+            DisplayTicketPrice("Adult",    ADULT_PRICING);
+            DisplayTicketPrice("Senior",   SENIOR_PRICING);
             break;
         case 2:
-            Console.Write("Enter an age: ");
-            userInput = Console.ReadLine();
-
-            Console.WriteLine($"The ticket price is: {GetTicketPrice(int.Parse(userInput))}" );
+            Console.WriteLine($"The ticket price is: {GetTicketPrice(GetAge()):$#,0.00}" );
             break;
         case 3:
+            int NumberOfPatrons = 0;
+            Console.Write("How Many People: ");
+            userInput = Console.ReadLine();
+            NumberOfPatrons = int.Parse(userInput);
+            
+            for (int i = 0; i < NumberOfPatrons; i++)
+            {
+                priceTotal += GetTicketPrice(GetAge());
+            }
+            Console.WriteLine($"The total price is: {priceTotal:$#,0.00}");
             break;
         case 4:
             break;
