@@ -25,3 +25,16 @@ GreaterThanFive(myNumber);
 GreaterThanFive(yourNumber);
 GreaterThanFive(15);
 
+int NumberPrompt(string promptForUser)
+{
+    Console.Write(promptForUser);
+    return int.Parse(Console.ReadLine());
+}
+
+myNumber = NumberPrompt("Please enter a number: ");
+
+int startNumber = NumberPrompt("Please enter a start number: ");
+int endNumber = NumberPrompt("Please enter a end number: ");
+
+Console.WriteLine(startNumber);
+Console.WriteLine(endNumber);
