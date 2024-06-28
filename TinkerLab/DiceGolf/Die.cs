@@ -18,7 +18,10 @@ namespace DiceGolf
 
         public void RollDie(Random r)
         {
-            dieValue = r.Next(1,7);
+            if (CanRoll)
+            {
+                dieValue = r.Next(1, 7);
+            }
         }
 
 

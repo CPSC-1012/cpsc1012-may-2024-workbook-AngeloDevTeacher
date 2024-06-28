@@ -14,7 +14,8 @@ for (int i = 0; i < DICE_COUNT; i++)
 {
     diceList.Add(new Die());
 }
-
+diceList[0].DieValue = randomInstance.NextDouble();
+Console.WriteLine(diceList[0].DieValue);
 void AttemptToRollDice()
 {
     foreach (var dice in diceList)
