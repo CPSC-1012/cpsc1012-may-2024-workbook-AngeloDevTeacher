@@ -15,27 +15,6 @@ int numberOfBars = 0;
 string userInput = "";
 string programOutput = "";
 
-
-
-// Show program title
-// Prompt "Enter the number of bars (1-10): "  bars
-// Validate and ask again as required
-// Prompt "Enter the size the {bars} bar: " bars[i]
-// Validate and ask again as required
-// Display Graph.
-
-Console.WriteLine("\t\t======Bar1======");
-Console.WriteLine();
-
-ValidateInput("Enter the number of bars (1-10): ", "Error: Please enter a number between 1 and 10.", 1, 10, ref numberOfBars);
-
-
-for (int i = 0; i < numberOfBars; i++)
-{
-    ValidateInput("Enter the size of bar {i+1} (0-50): ", "Error: Please enter a number between 0 and 50.", 0, 50, ref numberOfBars);
-}
-
-
 void ValidateInput(string initalPrompt, string errorPrompt, int minValue, int maxValue, ref int output)
 {
     do
@@ -48,7 +27,7 @@ void ValidateInput(string initalPrompt, string errorPrompt, int minValue, int ma
         }
         catch (Exception ex)
         {
-            output = minValue-1;
+            output = minValue - 1;
         }
         if (output < minValue || output > maxValue)
         {
@@ -56,3 +35,41 @@ void ValidateInput(string initalPrompt, string errorPrompt, int minValue, int ma
         }
     } while (output < minValue || output > maxValue);
 }
+
+void DisplayBars()
+{
+    Console.WriteLine("0                                                 50");
+    Console.WriteLine("|---------|---------|---------|---------|---------|");
+    for (int currentBar = 0; currentBar < numberOfBars; currentBar++)
+    {
+        Console.Write("|");
+        for (int currentStar = 0; currentStar < bars[currentBar]; currentStar++)
+        {
+            Console.Write("*");
+        }
+        Console.WriteLine();
+    }
+}
+
+// Show program title
+// Prompt "Enter the number of bars (1-10): "  bars
+// Validate and ask again as required
+// Prompt "Enter the size the {bars} bar: " bars[i]
+// Validate and ask again as required
+// Display Graph.
+
+Console.WriteLine("\t\t======Bar1======");
+Console.WriteLine();
+
+// get bar number
+ValidateInput("Enter the number of bars (1-10): ", "Error: Please enter a number between 1 and 10.", 1, 10, ref numberOfBars);
+
+// get bars sizes
+for (int currentBar = 0; currentBar < numberOfBars; currentBar++)
+{
+    ValidateInput($"Enter the size of bar {currentBar+1} (0-50): ", "Error: Please enter a number between 0 and 50.", 0, 50, ref bars[currentBar]);
+}
+
+//display bars
+DisplayBars();
+
