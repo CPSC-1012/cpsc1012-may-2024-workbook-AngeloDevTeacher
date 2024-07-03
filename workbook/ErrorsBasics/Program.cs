@@ -3,7 +3,6 @@
 // Start by making a simple method for example!
 // This prompt requires no error handling, as the Console.ReadLine() is added to an empty string
 // This means we will return a string no matter what.
-using System.Xml;
 
 static string BasicPrompt(string st)
 {
