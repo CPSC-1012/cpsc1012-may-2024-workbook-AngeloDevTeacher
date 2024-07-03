@@ -45,7 +45,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToFunctions", "IntroTo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MethodProblemsOne", "MethodProblemsOne\MethodProblemsOne.csproj", "{C14F2AE7-2B90-4373-84FF-C0233CDC25DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayProblemOne", "ArrayProblemOne\ArrayProblemOne.csproj", "{A13522C2-AC79-4514-8720-8D2F0F4AC485}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayProblemOne", "ArrayProblemOne\ArrayProblemOne.csproj", "{A13522C2-AC79-4514-8720-8D2F0F4AC485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorsBasics", "ErrorsBasics\ErrorsBasics.csproj", "{7B1EBF90-F004-4663-A615-0F7802CB6601}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,10 @@ Global
 		{A13522C2-AC79-4514-8720-8D2F0F4AC485}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A13522C2-AC79-4514-8720-8D2F0F4AC485}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A13522C2-AC79-4514-8720-8D2F0F4AC485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B1EBF90-F004-4663-A615-0F7802CB6601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B1EBF90-F004-4663-A615-0F7802CB6601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B1EBF90-F004-4663-A615-0F7802CB6601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B1EBF90-F004-4663-A615-0F7802CB6601}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
