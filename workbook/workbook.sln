@@ -49,6 +49,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayProblemOne", "ArrayPro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorsBasics", "ErrorsBasics\ErrorsBasics.csproj", "{7B1EBF90-F004-4663-A615-0F7802CB6601}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroParallelArrays", "IntroParallelArrays\IntroParallelArrays.csproj", "{9587C1E8-792B-4CB2-95A2-61AFF03E0E09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchAndArray", "SwitchAndArray\SwitchAndArray.csproj", "{551F53FB-779D-42F0-BEBD-9EE2C8424626}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +151,14 @@ Global
 		{7B1EBF90-F004-4663-A615-0F7802CB6601}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B1EBF90-F004-4663-A615-0F7802CB6601}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B1EBF90-F004-4663-A615-0F7802CB6601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9587C1E8-792B-4CB2-95A2-61AFF03E0E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9587C1E8-792B-4CB2-95A2-61AFF03E0E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9587C1E8-792B-4CB2-95A2-61AFF03E0E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9587C1E8-792B-4CB2-95A2-61AFF03E0E09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{551F53FB-779D-42F0-BEBD-9EE2C8424626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{551F53FB-779D-42F0-BEBD-9EE2C8424626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{551F53FB-779D-42F0-BEBD-9EE2C8424626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{551F53FB-779D-42F0-BEBD-9EE2C8424626}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
