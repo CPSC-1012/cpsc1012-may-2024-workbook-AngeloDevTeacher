@@ -6,6 +6,8 @@ string fullName = "";
 
 Console.WriteLine("Type in the pattern 1 thing at a time [A, 1, than your name]");
 
+
+// If the first function returns false, the else statement will trigger without running the rest of the code.
 if (WasLetterAPressedPrompt() && WasNumber1PressedPrompt() && ValidFullName(ref fullName))
 {
 	Console.WriteLine("All inputs valid");
@@ -77,7 +79,7 @@ static bool ValidFullName(ref string name)
     {
         Console.Write("Enter a full name (with a space between first and last name): ");
         UserInput = Console.ReadLine();
-        if (UserInput.Contains(" "))
+        if (UserInput.Contains(' '))
         {
             name = UserInput;
             success = true;
