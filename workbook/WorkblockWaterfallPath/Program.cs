@@ -4,7 +4,7 @@ Console.WriteLine("Hello, World!");
 string userInput = "";
 string fullName = "";
 
-Console.WriteLine("Type in the pattern 1 thing at a time [A, 1, than your name]");
+Console.WriteLine("Type in the pattern 1 thing at a time [A, 1, then your name]");
 
 
 // If the first function returns false, the else statement will trigger without running the rest of the code.
