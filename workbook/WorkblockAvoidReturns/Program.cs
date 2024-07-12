@@ -40,3 +40,29 @@ if (isValid)
     }
 }
 
+// This is an example to AVOID: multiple returns
+string BadRainbowChoice(char choice)
+{
+    if(choice == 'Y')
+    {
+        return "Rainbow!";
+    }
+    else
+    {
+        return "";
+    }
+}
+
+string GoodRainbowChoice(char choice)
+{
+    // Make an output variable the matches the return type.
+    string Output = "";
+    if (choice == 'Y')
+    {
+        // Instead of returning here, set the output value
+        Output = "Rainbow";
+    }
+
+    //return output OUTSIDE of any loops/ifs, etc. at the bottom of the function.
+    return Output;
+}
