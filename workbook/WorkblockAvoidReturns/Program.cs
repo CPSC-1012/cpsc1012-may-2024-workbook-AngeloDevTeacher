@@ -43,6 +43,7 @@ if (isValid)
 // This is an example to AVOID: multiple returns
 string BadRainbowChoice(char choice)
 {
+    // This has multiple return points. If we remove the else, this will break.
     if(choice == 'Y')
     {
         return "Rainbow!";
