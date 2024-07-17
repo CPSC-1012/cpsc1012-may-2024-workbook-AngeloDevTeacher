@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToFileWriting", "Intro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToFileReading", "IntroToFileReading\IntroToFileReading.csproj", "{8C1509A0-2E6D-4797-A7C3-63C3A673E3DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilePracticePetTracker", "FilePracticePetTracker\FilePracticePetTracker.csproj", "{391D7477-EB9F-4CA1-A351-2535DA367D74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{8C1509A0-2E6D-4797-A7C3-63C3A673E3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C1509A0-2E6D-4797-A7C3-63C3A673E3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C1509A0-2E6D-4797-A7C3-63C3A673E3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{391D7477-EB9F-4CA1-A351-2535DA367D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{391D7477-EB9F-4CA1-A351-2535DA367D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{391D7477-EB9F-4CA1-A351-2535DA367D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{391D7477-EB9F-4CA1-A351-2535DA367D74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
