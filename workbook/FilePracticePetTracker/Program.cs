@@ -16,6 +16,7 @@
 //
 
 const int PETS_MAX_COUNT = 10;
+int arrayCurrentSize = 0; // virtual size
 string[] loadedPetNames = new string[PETS_MAX_COUNT];
 string[] loadedPetNumbers = new string[PETS_MAX_COUNT];
 
@@ -78,29 +79,22 @@ void CreateNewPet()
 /// </summary>
 void LoadExistingPets()
 {
-    int currentCount = 0;
     if (File.Exists(fileName))
     {
         reader = new StreamReader(fileName);
-        while (reader != null && !reader.EndOfStream && currentCount < PETS_MAX_COUNT)
+        while (reader != null && !reader.EndOfStream && arrayCurrentSize < PETS_MAX_COUNT)
         {
             string record = reader.ReadLine();
 
-            // LETS LOAD THEM INTO THE PROGRAM MEMORY PROPERLY!
-            // HERE IS WHERE I PROCESS MY LINE!
             // I can split my string at the commas, saving it into an array of items.
             string[] items = record.Split(",");
-            loadedPetNames[currentCount] = items[0];
-            loadedPetNumbers[currentCount] = items[1];
-            
-            currentCount++;
+            //I then save the items into 2 different arrays.
+            loadedPetNames[arrayCurrentSize] = items[0];
+            loadedPetNumbers[arrayCurrentSize] = items[1];
+            // As I load, I need to track how much of the array is filled.
+            arrayCurrentSize++;
         }
-        // Working with the virutal size (the array with data, no empty spaces)
-        for (int i = 0; i < currentCount; i++)
-        {
-            Console.WriteLine($"Pet name:\t{loadedPetNames[i]}");
-            Console.WriteLine($"Pet fav number:\t{loadedPetNumbers[i]}");
-        }
+
         reader.Close();
         reader.Dispose();
     }
@@ -138,5 +132,10 @@ do
 
 void DisplayExistingPets()
 {
-    
+    // Working with the virutal size (the array with data, no empty spaces)
+    for (int i = 0; i < arrayCurrentSize; i++)
+    {
+        Console.WriteLine($"Pet name:\t{loadedPetNames[i]}");
+        Console.WriteLine($"Pet fav number:\t{loadedPetNumbers[i]}");
+    }
 }
