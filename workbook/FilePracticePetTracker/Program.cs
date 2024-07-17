@@ -13,7 +13,7 @@
 // 2. Prompt method
 // 3. Save method
 // 4. load method
-//
+
 
 const int PETS_MAX_COUNT = 10;
 int arrayCurrentSize = 0; // virtual size
