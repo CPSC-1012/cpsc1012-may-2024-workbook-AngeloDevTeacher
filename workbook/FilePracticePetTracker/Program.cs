@@ -64,7 +64,7 @@ void CreateNewPet()
 
             writer.WriteLine($"{PetName},{PetFavNumber}");
             writer.Close();
-            writer = null;
+            writer.Dispose();
         }
     }
     catch (Exception e)
@@ -101,6 +101,8 @@ void LoadExistingPets()
             Console.WriteLine($"Pet name:\t{loadedPetNames[i]}");
             Console.WriteLine($"Pet fav number:\t{loadedPetNumbers[i]}");
         }
+        reader.Close();
+        reader.Dispose();
     }
 }
 
