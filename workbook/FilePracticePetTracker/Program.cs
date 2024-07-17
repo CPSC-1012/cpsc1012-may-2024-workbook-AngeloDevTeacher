@@ -77,7 +77,7 @@ void CreateNewPet()
 /// <summary>
 /// A naieve approach to displaying the content.
 /// </summary>
-void LoadExistingPets()
+int LoadExistingPets()
 {
     if (File.Exists(fileName))
     {
@@ -98,6 +98,7 @@ void LoadExistingPets()
         reader.Close();
         reader.Dispose();
     }
+    return arrayCurrentSize;
 }
 
 do
@@ -119,8 +120,7 @@ do
             break;
         // View pet
         case "2":
-            LoadExistingPets();
-            DisplayExistingPets();
+            ViewPets();
             break;
         // Edit Pet
         case "3":
@@ -138,4 +138,10 @@ void DisplayExistingPets()
         Console.WriteLine($"Pet name:\t{loadedPetNames[i]}");
         Console.WriteLine($"Pet fav number:\t{loadedPetNumbers[i]}");
     }
+}
+
+void ViewPets()
+{
+    LoadExistingPets();
+    DisplayExistingPets();
 }
