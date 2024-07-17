@@ -16,6 +16,9 @@
 //
 
 const int PETS_MAX_COUNT = 10;
+string[] loadedPetNames = new string[PETS_MAX_COUNT];
+string[] loadedPetNumbers = new string[PETS_MAX_COUNT];
+
 string userChoice = "";
 
 string fileName = "";
@@ -43,6 +46,63 @@ void DisplayMenu()
     Console.WriteLine("[0] - Exit ");
 }
 
+/// <summary>
+/// Creates a new pet entry, with a name and number.
+/// </summary>
+void CreateNewPet()
+{
+    string PetName;
+    string PetFavNumber;
+
+    try
+    {
+        writer = new StreamWriter(fileName, true);
+        if (writer != null)
+        {
+            PetName = Prompt("Enter a pet name");
+            PetFavNumber = Prompt("Enter a pet's favourite number");
+
+            writer.WriteLine($"{PetName},{PetFavNumber}");
+            writer.Close();
+            writer = null;
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine($"Something went wrong. Stream writer error {e.Message} ");
+    }
+}
+
+/// <summary>
+/// A naieve approach to displaying the content.
+/// </summary>
+void LoadExistingPets()
+{
+    int currentCount = 0;
+    if (File.Exists(fileName))
+    {
+        reader = new StreamReader(fileName);
+        while (reader != null && !reader.EndOfStream && currentCount < PETS_MAX_COUNT)
+        {
+            string record = reader.ReadLine();
+
+            // LETS LOAD THEM INTO THE PROGRAM MEMORY PROPERLY!
+            // HERE IS WHERE I PROCESS MY LINE!
+            // I can split my string at the commas, saving it into an array of items.
+            string[] items = record.Split(",");
+            loadedPetNames[currentCount] = items[0];
+            loadedPetNumbers[currentCount] = items[1];
+            
+            currentCount++;
+        }
+        // Working with the virutal size (the array with data, no empty spaces)
+        for (int i = 0; i < currentCount; i++)
+        {
+            Console.WriteLine($"Pet name:\t{loadedPetNames[i]}");
+            Console.WriteLine($"Pet fav number:\t{loadedPetNumbers[i]}");
+        }
+    }
+}
 
 do
 {
@@ -59,30 +119,12 @@ do
     {
         // Create pet
         case "1":
-            string PetName;
-            string PetFavNumber;
-
-            try
-            {
-                writer = new StreamWriter(fileName, true);
-                if (writer != null)
-                {
-                    PetName = Prompt("Enter a pet name");
-                    PetFavNumber = Prompt("Enter a pet's favourite number");
-
-                    writer.WriteLine($"{PetName},{PetFavNumber}");
-                    writer.Close();
-                    writer = null;
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine($"Something went wrong. Stream writer error {e.Message} ");
-            }
-            
+            CreateNewPet();
             break;
         // View pet
         case "2":
+            LoadExistingPets();
+            DisplayExistingPets();
             break;
         // Edit Pet
         case "3":
@@ -92,4 +134,7 @@ do
     }
 } while (userChoice != "0");
 
-
+void DisplayExistingPets()
+{
+    
+}
