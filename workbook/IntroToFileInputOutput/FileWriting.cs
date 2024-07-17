@@ -35,7 +35,11 @@ try
     Console.Write("Enter a file name to write to:\t");
     fileName = Console.ReadLine();
     // Make a new instamce of the StreamWriter.
-    writer = new StreamWriter(fileName);
+    // The version below will overwrite the entire file.
+    //writer = new StreamWriter(fileName);
+
+    // This version will append, or "add to the end"
+    writer = new StreamWriter(fileName, true);
 }
 catch (Exception e)
 {
