@@ -59,11 +59,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkblockWaterfallPath", "W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkblockAvoidReturns", "WorkblockAvoidReturns\WorkblockAvoidReturns.csproj", "{76A1E7E4-591B-46BD-95D3-CE72A8D388D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToFileWriting", "IntroToFileInputOutput\IntroToFileWriting.csproj", "{E6A9A917-47C3-442B-876C-21B8319CBE87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToFileWriting", "IntroToFileInputOutput\IntroToFileWriting.csproj", "{E6A9A917-47C3-442B-876C-21B8319CBE87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToFileReading", "IntroToFileReading\IntroToFileReading.csproj", "{8C1509A0-2E6D-4797-A7C3-63C3A673E3DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToFileReading", "IntroToFileReading\IntroToFileReading.csproj", "{8C1509A0-2E6D-4797-A7C3-63C3A673E3DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilePracticePetTracker", "FilePracticePetTracker\FilePracticePetTracker.csproj", "{391D7477-EB9F-4CA1-A351-2535DA367D74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilePracticePetTracker", "FilePracticePetTracker\FilePracticePetTracker.csproj", "{391D7477-EB9F-4CA1-A351-2535DA367D74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkblockTaxFormula", "WorkblockTaxFormula\WorkblockTaxFormula.csproj", "{E7849986-63A4-42A3-BF0E-220F11BB1E8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,6 +197,10 @@ Global
 		{391D7477-EB9F-4CA1-A351-2535DA367D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{391D7477-EB9F-4CA1-A351-2535DA367D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{391D7477-EB9F-4CA1-A351-2535DA367D74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7849986-63A4-42A3-BF0E-220F11BB1E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7849986-63A4-42A3-BF0E-220F11BB1E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7849986-63A4-42A3-BF0E-220F11BB1E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7849986-63A4-42A3-BF0E-220F11BB1E8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -33,6 +33,8 @@ void DisplayProgramMenu()
 
 Appointment thisAppointment = new Appointment("Hello", DateTime.Parse("July 17, 2024"));
 
+thisAppointment.AppointmentName = "";
+
 
 
 Console.WriteLine(thisAppointment.ToString());
