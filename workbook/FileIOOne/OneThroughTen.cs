@@ -1,7 +1,7 @@
 ﻿
 StreamWriter writer = null;
 StreamReader reader = null;
-const string FILE_NAME = "numbers.txt";
+const string FILE_NAME = "numbers.csv";
 string output = "";
 
 try
