@@ -1,14 +1,14 @@
 ﻿
 
-// Variables
-
-using System.Security;
 
 /// <summary>
 /// Program purpose - What does this do?
 /// Name: Angelo Encarnacion
 /// Date Modified: July 23rd 2024
 /// </summary>
+/// 
+
+// Variables
 const int MAX_SIZE = 15;
 string exampleString = "";
 bool isItTrue = false;
