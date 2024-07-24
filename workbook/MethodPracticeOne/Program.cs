@@ -79,4 +79,4 @@ isItTrue = PromptBool("Enter true or false");
 Console.WriteLine(isItTrue);
 
 exampleNum = DecimalPrompt("Enter a decimal number: ");
-Console.WriteLine(exampleNum);
+Console.WriteLine($"The number entered was {exampleNum}. Pretend we loaded stuff.");
