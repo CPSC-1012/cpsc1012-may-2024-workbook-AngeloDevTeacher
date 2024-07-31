@@ -12,14 +12,15 @@ namespace LibraryExample
         private string _pageWordContent;
         // Pretend I can put an image here.
 
-        public string GetPageWordContent()
+        public string Read()
         {
             return _pageWordContent;
         }
 
-        public void Write(string content)
+        public void Write(string content, int pageNumber)
         {
             _pageWordContent = content;
+            _pageNumber = pageNumber;
         }
     }
 }

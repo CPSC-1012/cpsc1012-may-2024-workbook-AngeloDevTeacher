@@ -52,13 +52,14 @@ namespace LibraryExample
 
         public void WritePages(int numberOfPages)
         {
-            if (numberOfPages < 0)
+            if (numberOfPages > 0)
             {
+                _pages = new Page[numberOfPages];
                 for (int i = 0; i < numberOfPages; i++)
                 {
                     Page thisPage = new Page();
 
-                    thisPage.Write(Console.ReadLine());
+                    thisPage.Write(Console.ReadLine(), i+1);
 
                     _pages[i] = thisPage;
 
@@ -75,7 +76,7 @@ namespace LibraryExample
             string Output = "";
             for (int i = 0; i < _pages.Length; i++)
             {
-                Output += _pages[i].GetPageWordContent() + "\n\n";
+                Output += _pages[i].Read() + "\n\n";
             }
             return Output;
         }

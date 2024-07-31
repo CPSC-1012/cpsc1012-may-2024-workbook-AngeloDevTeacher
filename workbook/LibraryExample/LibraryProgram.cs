@@ -7,3 +7,5 @@ Console.WriteLine("Hello, World!");
 Book angelosDiary = new Book();
 
 angelosDiary.WritePages(3);
+
+Console.WriteLine();
