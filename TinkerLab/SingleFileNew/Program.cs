@@ -1,0 +1,7 @@
+﻿
+class Student
+{
+
+}
+
+Console.WriteLine("");
