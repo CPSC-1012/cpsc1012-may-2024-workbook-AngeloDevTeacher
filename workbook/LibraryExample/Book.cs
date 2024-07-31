@@ -42,11 +42,44 @@ namespace LibraryExample
         /// <summary>
         /// Gets the ISBN number - <see href="https://library-archives.canada.ca/eng/services/publishers/isbn/Pages/isbn.aspx/">ISBN page</see>
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The ISBN as an int.</returns>
         public int GetISBN()
         {
             return _isbn;
         }
+
+        // Specific methods for the book class.
+
+        public void WritePages(int numberOfPages)
+        {
+            if (numberOfPages < 0)
+            {
+                for (int i = 0; i < numberOfPages; i++)
+                {
+                    Page thisPage = new Page();
+
+                    thisPage.Write(Console.ReadLine());
+
+                    _pages[i] = thisPage;
+
+                }
+            }
+        }
+
+        /// <summary>
+        /// Returns a string containing all of the string content of the pages.
+        /// </summary>
+        /// <returns>The books word content as a string.</returns>
+        public string Read()
+        {
+            string Output = "";
+            for (int i = 0; i < _pages.Length; i++)
+            {
+                Output += _pages[i].GetPageWordContent() + "\n\n";
+            }
+            return Output;
+        }
+
 
     }
 }
