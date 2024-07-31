@@ -8,11 +8,11 @@ namespace LibraryExample
 {
     internal class Book
     {
-        private string _author;
-        private string _title;
-        private Page[] _pages;
-        private bool _isHardCover;
-        private int _isbn;
+        internal string _author;
+        internal string _title;
+        internal Page[] _pages;
+        internal bool _isHardCover;
+        internal int _isbn;
 
         // Getters
         /// <summary>
@@ -55,13 +55,13 @@ namespace LibraryExample
             if (numberOfPages > 0)
             {
                 _pages = new Page[numberOfPages];
-                for (int i = 0; i < numberOfPages; i++)
+                for (int currentPageNumber = 0; currentPageNumber < numberOfPages; currentPageNumber++)
                 {
                     Page thisPage = new Page();
 
-                    thisPage.Write(Console.ReadLine(), i+1);
+                    thisPage.Write(Console.ReadLine(), currentPageNumber+1);
 
-                    _pages[i] = thisPage;
+                    _pages[currentPageNumber] = thisPage;
 
                 }
             }

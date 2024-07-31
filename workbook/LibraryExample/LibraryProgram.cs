@@ -4,8 +4,6 @@ using LibraryExample;
 Console.WriteLine("Hello, World!");
 
 
-Book angelosDiary = new Book();
+Newspaper angelosDiary = new Newspaper();
 
 angelosDiary.WritePages(3);
-
-Console.WriteLine();
