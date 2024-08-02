@@ -8,11 +8,19 @@ const int MaxPetCount = 3;
 
 
 Pet[] pets = new Pet[MaxPetCount];
+Cat sully = new Cat("Sully", "Domestic Short Hair", 3, "Tuxedo pattern");
+Cat mike = new Cat("Mike", "Domestic Short Hair", 1, "Tuxedo pattern");
 
-
-pets[0] = new Cat("Sully", "Domestic Short Hair", 3, "Tuxedo pattern");
-pets[1] = new Cat("Mike", "Domestic Short Hair", 1, "Tuxedo pattern");
+pets[0] = sully;
+pets[1] = mike;
 pets[2] = new Bird("Charlie", "Parrot", 973, "Green");
 
-Console.WriteLine(pets[1].Name);
+for (int i = 0; i < 7; i++)
+{
+    sully.Walk();
+}
 
+mike.Walk();
+
+Console.WriteLine(sully.WalkCount);
+Console.WriteLine(mike.WalkCount);

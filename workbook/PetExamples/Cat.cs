@@ -6,8 +6,32 @@ using System.Threading.Tasks;
 
 namespace PetExamples
 {
-    internal class Cat : Pet
+    internal class Cat : Pet, IWalkable
     {
+
+        private CatBreeds _breed;
+        internal string BreedName
+        {
+            get
+            {
+                return _breed.ToString();
+            }
+            set
+            {
+                _breed = (CatBreeds)int.Parse(value);
+            }
+        }
+
+        private int _walks = 0;
+        internal int WalkCount
+        {
+            get
+            {
+                return _walks;
+            }
+        }
+
+
         public Cat()
         {
             _petName = string.Empty;
@@ -24,5 +48,22 @@ namespace PetExamples
             _petAge = age;
             _petDescription = description;
         }
+
+        public void Walk()
+        {
+            Console.WriteLine($"{ _petName} has gone on a walk.");
+            _walks++;
+        }
+    }
+
+
+    internal enum CatBreeds
+    {
+        NONE,
+        NORWEGIAN_FOREST_CAT,
+        TIGER,
+        BLACK_FOOTED_CAT,
+        RUSSIAN_BLUE,
+        SCOTTISH_FOLDER
     }
 }
