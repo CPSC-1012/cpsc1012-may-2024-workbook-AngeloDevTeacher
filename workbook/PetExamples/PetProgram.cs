@@ -2,7 +2,9 @@
 // It makes it easier to represent information and do things with the data we're represetning.
 
 
-const int MaxCatCount = 3;
+using PetExamples;
+
+const int MaxPetCount = 3;
 
 string catNameOne = "Sully";
 string catNameTwo = "Piper";
@@ -27,4 +29,9 @@ string[] catBreeds = new string[] { "Domestic Short Hair", "Tripoint Ragdoll", "
 int[] catAges = new int[] { 3, 2, 1 };
 string[] catColorDescriptions = new string[] { "Tuxedo pattern", "Tri Color", "Tuxedo pattern" };
 
-Console.WriteLine(catNames[0]);
+Pet[] pets = new Pet[MaxPetCount];
+pets[0] = new Pet();
+pets[1] = new Pet("Sully", "Domestic Short Hair", 3, "Tuxedo pattern");
+
+Console.WriteLine(pets[1].Name);
+
