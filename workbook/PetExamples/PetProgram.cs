@@ -29,9 +29,10 @@ string[] catBreeds = new string[] { "Domestic Short Hair", "Tripoint Ragdoll", "
 int[] catAges = new int[] { 3, 2, 1 };
 string[] catColorDescriptions = new string[] { "Tuxedo pattern", "Tri Color", "Tuxedo pattern" };
 
-Pet[] pets = new Pet[MaxPetCount];
-pets[0] = new Pet();
-pets[1] = new Pet("Sully", "Domestic Short Hair", 3, "Tuxedo pattern");
+Cat[] cats = new Cat[MaxPetCount];
 
-Console.WriteLine(pets[1].Name);
+cats[0] = new Cat();
+cats[1] = new Cat("Sully", "Domestic Short Hair", 3, "Tuxedo pattern");
+
+Console.WriteLine(cats[1].Name);
 
