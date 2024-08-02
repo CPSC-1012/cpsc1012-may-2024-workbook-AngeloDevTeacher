@@ -1,9 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-using LibraryExample;
-
-Console.WriteLine("Hello, World!");
+﻿using LibraryExample;
 
 
 Book angelosDiary = new Book();
+Book[] library = new Book[23];
 
-angelosDiary.WritePages(3);
+angelosDiary.WritePages(5);
+Console.WriteLine(angelosDiary.Read());

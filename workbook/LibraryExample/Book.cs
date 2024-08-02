@@ -73,10 +73,11 @@ namespace LibraryExample
         /// <returns>The books word content as a string.</returns>
         public string Read()
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
             string Output = "";
             for (int i = 0; i < _pages.Length; i++)
             {
-                Output += _pages[i].Read() + "\n\n";
+                Output += _pages[i].Read() + "\n";
             }
             return Output;
         }

@@ -11,3 +11,7 @@ const int MaxStudents = 25;
 
 Student[] students = new Student[MaxStudents];
 
+Student angelo = new Student("Angelo", "Encarnacion", 34);
+angelo.SetFirstName("            Socks");
+
+Console.WriteLine(angelo.GetFullName());
