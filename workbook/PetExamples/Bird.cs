@@ -6,23 +6,9 @@ using System.Threading.Tasks;
 
 namespace PetExamples
 {
-    internal class Pet
+    internal class Bird : Pet
     {
-
-        protected string _petName;
-        protected string _petBreed;
-        protected int _petAge;
-        protected string _petDescription;
-
-        internal string Name
-        {
-            get
-            {
-                return _petName;
-            }
-        }
-
-        public Pet()
+        public Bird()
         {
             _petName = string.Empty;
             _petBreed = string.Empty;
@@ -30,7 +16,7 @@ namespace PetExamples
             _petDescription = string.Empty;
         }
 
-        public Pet(string name, string breed, int age, string description)
+        public Bird(string name, string breed, int age, string description)
         {
             _petName = name;
             _petBreed = breed;
