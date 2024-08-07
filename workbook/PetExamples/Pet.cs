@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -37,6 +38,11 @@ namespace PetExamples
             _petBreed = breed;
             _petAge = age;
             _petDescription = description;
+        }
+
+        public override string ToString() 
+        {
+            return $"{_petName}, {_petAge}, {_petBreed}, {_petDescription}";
         }
     }
 }

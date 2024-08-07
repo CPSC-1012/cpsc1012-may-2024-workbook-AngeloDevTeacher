@@ -24,3 +24,5 @@ mike.Walk();
 
 Console.WriteLine(sully.WalkCount);
 Console.WriteLine(mike.WalkCount);
+
+Console.WriteLine(sully.ToString());
