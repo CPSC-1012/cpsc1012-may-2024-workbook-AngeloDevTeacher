@@ -19,6 +19,22 @@ namespace PetStore
         }
 
 
+        public DateTime CartDate
+        {
+            get
+            {
+                return _cartDate;
+            }
+            set
+            {
+                if (value > DateTime.Now)
+                {
+                    throw new Exception("Date cannot be in the future");
+                }
+                _cartDate = value;
+            }
+
+        }
         // Public property for our items.
         public List<StoreItem> Items
         {
