@@ -29,5 +29,38 @@ namespace PetStore
                 _productID = value.Trim();
             }
         }
+
+        public double Price
+        {
+            get
+            {
+                return _price;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new Exception("Price can not be set less than zero.");
+                }
+                _price = value;
+            }
+        }
+
+        public StoreItem()
+        {
+
+        }
+
+        public StoreItem(string productID, string productDescription, double price)
+        {
+            _productID = productID;
+            _productDescription = productDescription;
+            _price = price;
+        }
+
+        public override string ToString()
+        {
+            return $"Product ID: {_productID}, Product Description: {_productDescription}, Cost: {_price}";
+        }
     }
 }
