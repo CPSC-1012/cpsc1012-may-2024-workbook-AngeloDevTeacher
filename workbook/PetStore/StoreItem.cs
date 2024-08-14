@@ -46,6 +46,14 @@ namespace PetStore
             }
         }
 
+        public string AdvertisementListing
+        {
+            get
+            {
+                return _productDescription.ToUpper();
+            }
+        }
+
         public StoreItem()
         {
 

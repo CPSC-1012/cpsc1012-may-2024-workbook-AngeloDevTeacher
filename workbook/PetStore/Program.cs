@@ -12,6 +12,9 @@ using PetStore;
 string example = "";
 StoreItem item = new StoreItem();
 StoreItem greedyItem = new StoreItem("A100","Angelo's super litter box", 45.00);
+Cart exampleCart = new Cart();
+exampleCart.Items.Add(item);
+exampleCart.Items.Add(greedyItem);
 // Main Program
 item.ProductID = Prompt("Please enter in a product ID:\t");
 Console.WriteLine(item.ProductID);
