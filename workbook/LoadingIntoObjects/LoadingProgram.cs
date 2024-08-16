@@ -11,6 +11,7 @@ string filePath = "students.csv";
 List<Student> students = new List<Student>();
 
 
+
 if (File.Exists(filePath))
 {
     reader = new StreamReader(filePath);
@@ -34,3 +35,24 @@ if (File.Exists(filePath))
 }
 
 Console.WriteLine(students.Count);
+
+
+static double AddGrades(List<Student> students)
+{
+    double currentGradeTotal = 0;
+    foreach(Student student in students)
+    {
+        currentGradeTotal += student.Grade;
+        // Comment this out to see error handling.
+        //try
+        //{
+        //    student.FirstName = "";
+        //}
+        //catch (Exception e)
+        //{
+        //    Console.WriteLine(e.Message);
+        //}
+
+    }
+    return currentGradeTotal;
+}

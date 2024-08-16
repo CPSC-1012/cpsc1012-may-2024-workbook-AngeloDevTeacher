@@ -21,6 +21,30 @@ namespace LoadingIntoObjects
             _grade = grade;
         }
 
+        public string FirstName
+        {
+            get
+            {
+                return _firstName;
+            }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new Exception("Name cannot be empty");
+                }
+
+                _firstName = value;
+            }
+        }
+
+
+        public double Grade
+        {
+            get { return _grade; }
+        }
+
+
         public string FullName
         {
             get
