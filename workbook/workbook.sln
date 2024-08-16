@@ -99,7 +99,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComplexLists", "OOPLists\Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleLists", "VehicleLists\VehicleLists.csproj", "{59F8888E-F14C-42F7-B219-2D83E4436B30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStore", "PetStore\PetStore.csproj", "{F610F766-0A5A-420A-9604-DCDCFB86743E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetStore", "PetStore\PetStore.csproj", "{F610F766-0A5A-420A-9604-DCDCFB86743E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldStyleConsoleApp", "OldStyleConsoleApp\OldStyleConsoleApp.csproj", "{AEF5B526-1DF3-45F0-992B-B69FD6502011}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadingIntoObjects", "LoadingIntoObjects\LoadingIntoObjects.csproj", "{3EF43499-2874-47BE-9B63-5D5DDD93BD32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -287,6 +291,14 @@ Global
 		{F610F766-0A5A-420A-9604-DCDCFB86743E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F610F766-0A5A-420A-9604-DCDCFB86743E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F610F766-0A5A-420A-9604-DCDCFB86743E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEF5B526-1DF3-45F0-992B-B69FD6502011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF5B526-1DF3-45F0-992B-B69FD6502011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF5B526-1DF3-45F0-992B-B69FD6502011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF5B526-1DF3-45F0-992B-B69FD6502011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EF43499-2874-47BE-9B63-5D5DDD93BD32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EF43499-2874-47BE-9B63-5D5DDD93BD32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EF43499-2874-47BE-9B63-5D5DDD93BD32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EF43499-2874-47BE-9B63-5D5DDD93BD32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
